@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	 version="3.1">
+    <servlet>
+        <servlet-name>User_signup</servlet-name>
+        <servlet-class>Action.User_Signup</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>User_signup</servlet-name>
+        <url-pattern>/user_reg</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Admin_login</servlet-name>
+        <servlet-class>Action.Admin_login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Admin_login</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Add_Dataset</servlet-name>
+        <servlet-class>Action.upload_dataset</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Add_Dataset</servlet-name>
+        <url-pattern>/add_dataset</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
